@@ -1,0 +1,28 @@
+/**app.wxss**/
+
+@import './assets/icondown.wxss';
+
+.container {
+  box-sizing: border-box;
+  color: #333;
+  background: #f6f7fd;
+  font-size: 30rpx;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+} 
+
+.copyright{
+  display: flex;
+  flex: 1;
+  align-self: center;
+  align-items: flex-end;
+  padding: 20rpx 0;
+
+  color: #888;
+}
+
+.view-hover {
+  background: #f3f3f3!important;
+}

@@ -1,0 +1,40 @@
+
+.container{
+  background: white;
+}
+
+.lang-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  border-bottom: 1px solid lightgray;
+  padding: 20rpx 40rpx;
+  color: #aaa;
+  font-size: 28rpx;
+}
+
+.item{
+  padding-left: 40rpx;
+}
+
+.item-inner{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding: 30rpx 40rpx 30rpx 0;
+}
+
+.item .txt{
+  flex: 1;
+}
+
+.item .iconfont{
+  margin-left: auto;
+  color: #d13511;
+}
+
+.item:nth-child(2) .item-inner {
+  border-top: none;
+}

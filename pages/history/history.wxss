@@ -1,0 +1,32 @@
+
+.history-list{
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 20rpx;
+  height: 100vh;
+
+  position: relative;
+}
+
+.icon-close{
+  position: absolute;
+  top: 40rpx;
+  right: 40rpx;
+}
+
+.title{
+  border-bottom: 1px solid lightgray;
+  padding:20rpx 30rpx;
+  color: #888;
+  font-size: 28rpx;
+}
+
+.item{
+  border-bottom: 1px solid lightgray;
+  padding: 30rpx;
+}
+
+.result{
+  color: #888;
+}

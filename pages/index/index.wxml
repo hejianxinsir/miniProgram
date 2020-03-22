@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="change">
+    <navigator url="/pages/change/change" hover-class="navigator-hover">
+      <block>
+        <text>翻译成{{curLang.chs}}</text>
+        <text class="iconfont icon-down"></text>
+      </block> 
+    </navigator>
+  </view>
+
+  <view class="input-area">
+    <text class="iconfont icon-close" hidden="{{hideClearIcon}}" bindtap="onTapClose"></text>
+    <view class="text-area">
+      <textarea placeholder="输入想要翻译的内容" placeholder-style="color: #8995a1;font-size: 28rpx;" bindinput="onInput" bindconfirm="onConfirm" bindblur="onConfirm" value="{{query}}"></textarea>
+    </view>
+    <view class="result">
+      <view class="text-title">译文</view>
+      <view class="text-result" wx:for="{{result}}" wx:key="index">
+        <text selectable="true">{{item.dst}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="copyright">©️ Janson</view>
+
+</view>
